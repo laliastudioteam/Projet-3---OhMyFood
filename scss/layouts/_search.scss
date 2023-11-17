@@ -1,0 +1,19 @@
+.search {
+    
+    background-color: $background-color-grey;
+    height: 50px;
+}
+.search__group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    &__icon {
+        width:12px;
+        height:16px;
+    }
+    &__input {
+        border: none;
+        font-family: $font-global;
+    }
+}

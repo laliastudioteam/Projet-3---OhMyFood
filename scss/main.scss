@@ -1,10 +1,21 @@
-@import "./base/normalize";
 
-@import "./layouts/header";
-@import "./layouts/footer";
+/* Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./utils/functions";
+
+@import "./base/normalize";
+
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/footer";
+@import "./layouts/search";
+@import "./layouts/intro";
+@import "./layouts/functioning";
+
+
+
 
 

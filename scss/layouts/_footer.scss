@@ -1,0 +1,37 @@
+.footer {
+    background-color: $background-color-dark;
+    padding:22Px 25px 22px 25px;
+    &__logo {
+        &__img {
+            width:137px;
+            height:27px;
+            filter: brightness(0) invert(1);
+        }
+    }
+    &__navbar {
+        margin: 20px 0px;
+        &__list {
+            list-style: none;
+            padding:0px;
+            margin:0px;
+            &__option {
+                margin: 0px 0px 10px 0px;
+
+            }
+            &__link {
+                display:flex;
+                flex-direction: row;
+                font-family: $font-global;
+                text-decoration: none;
+                text-align: start;
+                justify-content: self;
+                color: #fff;
+                &__icon{
+                    width:11px;
+                    height:13px;
+                    margin:0px 20px 0px 0px;
+                }
+            }
+        }
+    }
+}

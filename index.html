@@ -1,21 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Oh My Food</title>
-		<link href="css/main.css" rel="stylesheet" />
-	</head>
-	<body>
-		<header>
-            <div class"logo">
-
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oh My Food</title>
+    <link href="scss/main.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="header">
+        <div class="back">
+            <a href=""><img src="assets/icones/back.svg" alt="Retour"/></a>
+        </div>
+        <div class="header__logo">
+            <img
+            class="header__logo__img"
+            src="assets/images/logo/ohmyfood@2x.svg"
+            alt="logo"
+            />
+        </div>
+        <nav></nav>
+    </header>
+    <main>
+        <section>
+            <div class="search">
+                <div class="search__group">
+                    <label for="search_input"><img class="search__group__icon" src="./assets/icones/pin.svg" alt="location"></label>
+                    <input class="search__group__input" type="text" value="Paris, Belleville" id="search_input" placeholder="Recherchez votre ville">
+                    
+                </div>
             </div>
-            <nav>
-
-            </nav>
-        </header>
-		<main></main>
-		<footer></footer>
-	</body>
+            <div class="intro">
+                <h1 class="intro__title">Réservez le menu qui vous convient</h1>
+                <p class="intro__baseline">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+                <button class="big_button">Explorez nos restaurants</button>
+            </div>
+        </section>
+        <div class="hero">
+            <img
+            class="hero__img"
+            src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+            alt="restaurant"
+            />
+        </div>
+        <section id="functioning">
+            <h2>Fonctionnement</h2>
+            <a href="#" class="functioning__link"><img class="functioning__link__icon" src="assets/icones/mobile-screen-button.svg" alt="mobile_screen">Choisissez un restaurant</a>
+            <a href="#" class="functioning__link"><img class="functioning__link__icon"src="assets/icones/list-ul.svg" alt="mobile_screen">Composez votre menu</a>
+            <a href="#" class="functioning__link"><img class="functioning__link__icon" src="assets/icones/store.svg" alt="mobile_screen">Dégustez au restaurant</a>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__logo">
+            <img
+            class="footer__logo__img"
+            src="assets/images/logo/ohmyfood@2x.svg"
+            alt="footer_logo"
+            />
+        </div>
+        <nav class="footer__navbar">
+            <ul class="footer__navbar__list">
+                <li class="footer__navbar__list__option">
+                    <a href="#" class="footer__navbar__list__link"
+                    ><img src="assets/icones/cutfork.svg" alt="Couteau Fourchette" class="footer__navbar__list__link__icon"/>Proposer un
+                    restaurant</a
+                    >
+                </li>
+                <li class="footer__navbar__list__option">
+                    <a href="#" class="footer__navbar__list__link"
+                    ><img src="assets/icones/handshake.svg" alt="Poignée de main" class="footer__navbar__list__link__icon">Devenir
+                    partenaire</a
+                    >
+                </li>
+                <li class="footer__navbar__list__option">
+                    <a href="#" class="footer__navbar__list__link">Mentions légales</a>
+                </li>
+                <li class="footer__navbar__list__option">
+                    <a href="#" class="footer__navbar__list__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
 </html>

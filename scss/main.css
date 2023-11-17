@@ -1,1 +1,116 @@
-/*# sourceMappingURL=main.css.map */
+/* Fonts Import */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  font-family: "Roboto";
+  margin: 0;
+}
+
+.big_button {
+  display: block;
+  color: white;
+  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  padding: 20px;
+  border: none;
+  border-radius: 25px;
+  font-family: "Roboto";
+  font-weight: 500px;
+  font-size: 16px;
+  margin: 10px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.header__logo {
+  margin: 20px;
+}
+.header__logo__img {
+  height: 44px;
+  width: 162px;
+}
+
+.hero__img {
+  width: 100%;
+}
+
+.footer {
+  background-color: #353535;
+  padding: 22Px 25px 22px 25px;
+}
+.footer__logo__img {
+  width: 137px;
+  height: 27px;
+  filter: brightness(0) invert(1);
+}
+.footer__navbar {
+  margin: 20px 0px;
+}
+.footer__navbar__list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.footer__navbar__list__option {
+  margin: 0px 0px 10px 0px;
+}
+.footer__navbar__list__link {
+  display: flex;
+  flex-direction: row;
+  font-family: "Roboto";
+  text-decoration: none;
+  text-align: start;
+  justify-content: self;
+  color: #fff;
+}
+.footer__navbar__list__link__icon {
+  width: 11px;
+  height: 13px;
+  margin: 0px 20px 0px 0px;
+}
+
+.search {
+  background-color: #EAEAEA;
+  height: 50px;
+}
+
+.search__group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.search__group__icon {
+  width: 12px;
+  height: 16px;
+}
+.search__group__input {
+  border: none;
+  font-family: "Roboto";
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.intro__title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.13px;
+  margin: 20px 0 20px 0;
+  display: flex;
+  align-items: center;
+  color: red;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.functioning {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=main.css.map */
