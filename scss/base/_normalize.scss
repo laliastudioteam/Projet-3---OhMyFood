@@ -1,19 +1,10 @@
 body{
     font-family: $font-global;
     margin:0;
+    background-color: $background-color-button;
 }
-.big_button{
-    display:block;
-    color:white;
-    background:linear-gradient(0deg, #9356DC, #FF79DA);
-    padding:20px;
-    border:none;
-    border-radius:25px;
-    font-family: $font-global;
-    font-weight: 500px;
-    font-size:16px;
-    margin:10px;
+
+a {
+    text-decoration:none;
 }
-.button_home{
-    
-}
+

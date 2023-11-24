@@ -1,0 +1,68 @@
+.menu{
+    width:100%;
+    margin-top:-20px;
+    padding:20px;
+  background-color:  $background-color-grey;
+  border-radius: 20px 20px 0 0;
+  box-sizing:border-box;
+  &__title{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: $font-secondary;
+    margin:0px;
+    &__favorite {
+        margin-right: 20px;
+        img {
+            width: 21px;
+            height: 21px;
+        }
+       img:active, img:hover {
+        content: url("../assets/icones/heart-full.svg");
+    }
+  }
+  
+}
+
+}
+.separation-plat{
+    margin-top:30px;
+    &__title{
+        font-family: $font-global;
+        font-size:16px;
+        font-weight:300;
+        text-transform: uppercase;
+        &__underline{
+            height:3px;
+            width:40px;
+            background-color:$background-color-green;
+            margin-top:3px;
+        }
+    }
+}
+.command{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    margin:20px;
+}
+
+@media screen and (min-width: 768px) {
+.menu{
+    width:70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-left: 10%;
+    padding-right:10%;
+    &__title{
+        justify-content:start;
+        &__favorite {
+            margin-left: 20px;
+            margin-right: 0px;
+        }
+        
+}
+}
+
+}

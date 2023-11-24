@@ -1,0 +1,106 @@
+.functioning {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: $background-color;
+    &__section-title {
+        font-family: $font-global;
+        font-weight: 400;
+        margin: 30px 0px 20px 0px;
+    }
+    &__link {
+        background-color: $background-color-button;
+        box-shadow: 0px 4px 15px (rgba(#000000, 15%));
+        box-sizing: border-box;
+        border-radius: 15px;
+        width: 90%;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        font-family: $font-global;
+        font-size: 16px;
+        color: $font-primary-color;
+        font-weight: 500px;
+        margin-left: 5%;
+        margin-bottom: 20px;
+        &__step {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap:wrap;
+            border-radius: 20px;
+            padding: 5px;
+            height: 20px;
+            width: 20px;
+            margin-left: -50px;
+            color: $primary-color;
+            background-color: $third-color;
+        }
+
+        &__icon {
+            margin-right: 20px;
+            margin-left: 25px;
+        }
+    }
+    &__link:hover {
+        background-color: $background-color-grey;
+        box-shadow: 0px 4px 15px (rgba(#000000, 30%));
+
+        &__icon {
+            margin-right: 20px;
+        }
+    }
+}
+
+/****** restaurants ***********/
+
+.restaurants {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    &__section-title {
+        font-family: $font-global;
+        font-weight: 400;
+        margin: 30px 0px 20px 0px;
+    }
+    &__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: stretch;
+        gap: 4px;
+        margin: 5%;
+    }
+}
+/****** Media queries ***********/
+
+@media screen and (min-width: 768px) {
+    .functioning {
+   
+        flex-wrap: wrap;
+        &__list{
+            display:flex;
+            flex-direction:row;
+            margin:20px  5% 20px 5%;
+            justify-content: space-between;
+           
+        }
+        &__link{
+            margin-left:0;
+         }
+        &__link:not(:last-child){
+           margin-right:40px;
+        }
+        
+       
+}
+.restaurants__list{
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+
+}
