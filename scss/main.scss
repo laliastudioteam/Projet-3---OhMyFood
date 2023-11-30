@@ -1,7 +1,8 @@
 /* autoprefixer: off */
 @import "./vendors/fonts";
-
 @import "./utils/variables";
+@import "./utils/animations";
+
 @import "./utils/mixins";
 @import "./utils/functions";
 
@@ -16,11 +17,7 @@
 @import "./components/menu_card";
 @import "./components/restaurant_card";
 @import "./components/buttons";
+@import "./components/loader";
 
 @import "./pages/home";
 @import "./pages/menu";
-
-
-
-
-

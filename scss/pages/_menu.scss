@@ -1,68 +1,119 @@
-.menu{
-    width:100%;
-    margin-top:-20px;
-    padding:20px;
-  background-color:  $background-color-grey;
-  border-radius: 20px 20px 0 0;
-  box-sizing:border-box;
-  &__title{
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    font-family: $font-secondary;
-    margin:0px;
-    &__favorite {
-        margin-right: 20px;
-        img {
-            width: 21px;
-            height: 21px;
-        }
-       img:active, img:hover {
-        content: url("../assets/icones/heart-full.svg");
-    }
-  }
-  
-}
+.menu {
+    width: 100%;
+    margin-top: -20px;
+    padding: 20px;
+    max-width: 1200px;
+    background-color: $background-color-grey;
+    border-radius: 20px 20px 0 0;
+    box-sizing: border-box;
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: $font-secondary;
+        margin: 0px;
+        &__favorite {
+			margin-right: 20px;
+			&__img {
 
+				width: 22px;
+				height: 22px;
+				transition: all 2s ease-in-out;
+				&:hover {
+				opacity:0;
+					
+				}
+				&__container {
+					-webkit-mask-image: url("../assets/icones/heart-solid.svg");
+						mask-image: url("../assets/icones/heart-solid.svg");
+					transition: all 1s ease-in-out;
+					background-image: linear-gradient(0deg, #9356dc, #ff79da, transparent, transparent);
+					width: 22px;
+					height: 22px;
+					background-size: 100% 300%;
+					&:hover {
+					
+						background-position: 100% 100%;
+
+					}
+				}
+			
+			}
+			
+
+				
+			
+		}
+    }
 }
-.separation-plat{
-    margin-top:30px;
-    &__title{
+.group_menu{
+    opacity:0;
+}
+.group_entrees{
+    animation: fadeIn 2s 0s;
+    animation-fill-mode: forwards;
+}
+.group_plats{
+    animation: fadeIn 2s 1s;
+    animation-fill-mode: forwards;
+}
+.group_desserts{
+    animation: fadeIn 2s 2s;
+    animation-fill-mode: forwards;
+}
+.separation-plat {
+    margin-top: 30px;
+    &__title {
         font-family: $font-global;
-        font-size:16px;
-        font-weight:300;
+        font-size: 16px;
+        font-weight: 300;
         text-transform: uppercase;
-        &__underline{
-            height:3px;
-            width:40px;
-            background-color:$background-color-green;
-            margin-top:3px;
+        &__underline {
+            height: 3px;
+            width: 40px;
+            background-color: $background-color-green;
+            margin-top: 3px;
         }
     }
 }
-.command{
-    display:flex;
+.command {
+    display: flex;
     align-items: center;
     justify-content: center;
-    width:100%;
-    margin:20px;
+    width: 100%;
+    margin: 20px;
+}
+/* Hero's */
+
+.hero_a_la_francaise {
+    background-image: url("../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+
+.hero_la_note_enchantee {
+    background-image: url("../assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+
+.hero_le_delice_des_sens {
+    background-image: url("../assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+
+.hero_la_palette_du_gout {
+    background-image: url("../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
 
 @media screen and (min-width: 768px) {
-.menu{
-    width:70%;
-    margin-left: 15%;
-    margin-right: 15%;
-    padding-left: 10%;
-    padding-right:10%;
-    &__title{
-        justify-content:start;
-        &__favorite {
-            margin-left: 20px;
-            margin-right: 0px;
+    .menu {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 10%;
+        padding-right: 10%;
+        &__title {
+            justify-content: start;
+            &__favorite {
+                margin-left: 20px;
+                margin-right: 0px;
+            }
         }
-        
-}
-}
-
+    }
 }

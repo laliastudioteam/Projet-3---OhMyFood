@@ -1,84 +1,84 @@
 /****** menu_card ***********/
 
-a.menu__card-link {
+a.menu-link {
 	width: 100%;
 	padding: 0;
 	margin: 0;
 	display: flex;
 	box-sizing: border-box;
+	&:hover .menu-card {
+		box-shadow: 0px 4px 15px (rgba(#000000, 20%));
+	}
+	&:hover .menu-card__content__price {
+		transform: translateX(-60px);
+		&__check__img {
+			animation: fadeIn 1s 0.2s;
+			animation-fill-mode: forwards;
+		}
+	}
 }
-a.menu__card-link .card {
+
+a.menu-link .menu-card {
 	margin-bottom: 20px;
 	height: 69px;
 	width: 100%;
 	box-shadow: 0px 4px 15px (rgba(#000000, 15%));
 	border-radius: 15px;
 	background-color: $background-color;
-}
-
-a.menu__card-link:hover .card {
-	box-shadow: 0px 4px 15px (rgba(#000000, 20%));
-}
-
-a.menu__card-link .card-content {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	display: flex;
-	align-items: center;
-	overflow: hidden;
-}
-
-a.menu__card-link .card-txt {
-	margin-left: 20px;
-	margin-top: 13px;
-	&__title {
-		margin: 0px;
-		font-weight: 700;
-		font-size: 18px;
-		font-family: $font-global;
-		color: $font-primary-color;
-	}
-	&__subtitle {
-		font-size: 13px;
-		margin: 0px 0px 30px 0px;
-		font-weight: 300;
-		font-size: 17px;
-		font-family: $font-global;
-		color: $font-primary-color;
-	}
-}
-
-a.menu__card-link .card-price {
-	font-size: 15px;
-	font-weight: 700;
-	margin: -14px -60px 0px -13px;
-	color: $secondary-color;
-	display: flex;
-	align-items: center;
-	transition: 0.5s;
-	&__price {
-		margin-right: 10px;
-		margin-top: 15px;
-	}
-	&__check {
-		background-color: $background-color-green;
-		border-radius: 0 15px 15px 0;
-		width: 60px;
-		height: 70px;
+	&__content {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
 		display: flex;
 		align-items: center;
-		justify-content: center;
-		&__img {
-			width: 20px;
-			height: 20px;
-			height: auto;
+		overflow: hidden;
+		&__txt {
+			margin-left: 20px;
+			margin-top: 13px;
+			&__title {
+				margin: 0px;
+				font-weight: 700;
+				font-size: 18px;
+				font-family: $font-global;
+				color: $font-primary-color;
+			}
+			&__subtitle {
+				font-size: 13px;
+				margin: 0px 0px 30px 0px;
+				font-weight: 300;
+				font-size: 17px;
+				font-family: $font-global;
+				color: $font-primary-color;
+			}
+		}
+		&__price {
+			font-size: 15px;
+			font-weight: 700;
+			margin: -14px -60px 0px -13px;
+			color: $secondary-color;
+			display: flex;
+			align-items: center;
+			transition: all 0.5s ease-in-out;
+			&__price {
+				margin-right: 10px;
+				margin-top: 15px;
+			}
+			&__check {
+				background-color: $background-color-green;
+				border-radius: 0 15px 15px 0;
+				width: 60px;
+				height: 70px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				&__img {
+					width: 20px;
+					height: 20px;
+					height: auto;
+					opacity: 0;
+				}
+			}
 		}
 	}
 }
-
-a.menu__card-link:hover .card-price {
-	margin: -14px 0px 0px -13px;
-}
-
-

@@ -1,23 +1,22 @@
-
 /* Buttons */
-.big_button{
-    display:flex;
-    align-items:center;
-    justify-content: center;
-    color:white;
-    background:linear-gradient(0deg, #9356DC, #FF79DA);
-    padding:20px 40px;
-    border:none;
-    border-radius:35px;
-    font-family: $font-global;
-    font-weight: 500px;
-    font-size:16px;
-    margin:10px;
-    width:-moz-fit-content;
-    width:fit-content;
-    opacity: 1;
-    transition: 0.5s;
+.big_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: linear-gradient(0deg, #9356dc, #ff79da);
+  padding: 20px 40px;
+  border: none;
+  border-radius: 35px;
+  font-family: $font-global;
+  font-weight: 500px;
+  font-size: 16px;
+  margin: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+  opacity: 1;
+  transition: 0.5s;
 }
-.big_button:hover{
-  opacity:0.5;
+.big_button:hover {
+  opacity: 0.5;
 }

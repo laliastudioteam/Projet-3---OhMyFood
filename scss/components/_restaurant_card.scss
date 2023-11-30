@@ -1,6 +1,6 @@
 /****** restaurant_card ***********/
 
-a.restaurant__card-link {
+a.restaurant-link {
 	width: 100%;
 	padding: 0;
 	margin: 0;
@@ -8,8 +8,11 @@ a.restaurant__card-link {
 	box-sizing: border-box;
 	position: relative;
 	flex-direction: column;
+	&:hover .restaurant-card {
+		box-shadow: 0px 4px 15px (rgba(#000000, 20%));
+	}
 }
-a.restaurant__card-link .card {
+a.restaurant-link .restaurant-card {
 	margin-bottom: 40px;
 	height: auto;
 	width: 100%;
@@ -22,73 +25,80 @@ a.restaurant__card-link .card {
 		border-top-right-radius: 20px;
 		object-fit: cover;
 	}
-}
-
-a.restaurant__card-link:hover .card {
-	box-shadow: 0px 4px 15px (rgba(#000000, 20%));
-}
-
-a.restaurant__card-link .card-new {
-	font-family: $font-global;
-	font-size: 16px;
-	font-weight: 500;
-	background-color: $background-color-green;
-	padding: 10px;
-	border-radius: 2px;
-	position: absolute;
-	top: 20px;
-	right: 20px;
-	color: $fourth-color;
-	box-shadow: 0px 2px 15px (rgba(#000000, 15%));
-}
-
-a.restaurant__card-link .card-content {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-a.restaurant__card-link .card-txt {
-	margin-left: 20px;
-	&__title {
-		margin: 20px 0px 5px 0px;
-		font-weight: 700;
-		font-size: 18px;
+	&__new {
 		font-family: $font-global;
-		color: $font-primary-color;
+		font-size: 16px;
+		font-weight: 500;
+		background-color: $background-color-green;
+		padding: 10px;
+		border-radius: 2px;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		color: $fourth-color;
+		box-shadow: 0px 2px 15px (rgba(#000000, 15%));
 	}
-	&__subtitle {
-		font-size: 13px;
-		margin: 0px 0px 20px 0px;
-		font-weight: 300;
-		font-size: 17px;
-		font-family: $font-global;
-		color: $font-primary-color;
+	&__content {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&__txt {
+			margin-left: 20px;
+			&__title {
+				margin: 20px 0px 5px 0px;
+				font-weight: 700;
+				font-size: 18px;
+				font-family: $font-global;
+				color: $font-primary-color;
+			}
+			&__subtitle {
+				font-size: 13px;
+				margin: 0px 0px 20px 0px;
+				font-weight: 300;
+				font-size: 17px;
+				font-family: $font-global;
+				color: $font-primary-color;
+			}
+		}
+		&__favorite {
+			margin-right: 20px;
+			&__img {
+
+				width: 22px;
+				height: 22px;
+				transition: all 2s ease-in-out;
+				&:hover {
+				opacity:0;
+					
+				}
+				&__container {
+					-webkit-mask-image: url("../assets/icones/heart-solid.svg");
+						mask-image: url("../assets/icones/heart-solid.svg");
+					transition: all 1s ease-in-out;
+					background-image: linear-gradient(0deg, #9356dc, #ff79da, transparent, transparent);
+					width: 22px;
+					height: 22px;
+					background-size: 100% 300%;
+					&:hover {
+					
+						background-position: 100% 100%;
+
+					}
+				}
+			
+			}
+			
+
+				
+			
+		}
 	}
 }
 
-a.restaurant__card-link .card-favorite {
-	margin-right: 20px;
-}
-
-a.restaurant__card-link .card-favorite img {
-	width: 21px;
-	height: 21px;
-}
-
-a.restaurant__card-link .card-favorite img:active,
-a.restaurant__card-link .card-favorite img:hover {
-	content: url("../assets/icones/heart-full.svg");
-}
 /****** Media queries ***********/
 @media screen and (min-width: 768px) {
-
-a.restaurant__card-link {
-
-width:45%;
-
-
-}
-
+	a.restaurant-link {
+		width: 45%;
+	}
 }

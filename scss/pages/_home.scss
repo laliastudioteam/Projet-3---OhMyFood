@@ -20,23 +20,26 @@
         display: flex;
         align-items: center;
         font-family: $font-global;
-        font-size: 16px;
         color: $font-primary-color;
-        font-weight: 500px;
+        font-weight: 500;
         margin-left: 5%;
         margin-bottom: 20px;
+       
+   
         &__step {
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-wrap:wrap;
+            flex-wrap: wrap;
             border-radius: 20px;
             padding: 5px;
             height: 20px;
             width: 20px;
+            font-size: 16px;
             margin-left: -50px;
             color: $primary-color;
             background-color: $third-color;
+            transition: all 0.2s ease-out;
         }
 
         &__icon {
@@ -47,11 +50,20 @@
     &__link:hover {
         background-color: $background-color-grey;
         box-shadow: 0px 4px 15px (rgba(#000000, 30%));
-
-        &__icon {
-            margin-right: 20px;
-        }
+        font-weight: 700;
+     
     }
+    &__link:hover .functioning__link__step {
+        transform: translateX(20%) scale(110%) ;
+        box-shadow: 0px 4px 15px (rgba(#000000, 10%));
+     
+
+      }
+      &__link:hover .functioning__link__icon {
+        transform: scale(110%) ;
+
+
+      }
 }
 
 /****** restaurants ***********/
@@ -79,28 +91,22 @@
 
 @media screen and (min-width: 768px) {
     .functioning {
-   
         flex-wrap: wrap;
-        &__list{
-            display:flex;
-            flex-direction:row;
-            margin:20px  5% 20px 5%;
+        &__list {
+            display: flex;
+            flex-direction: row;
+            margin: 20px 5% 20px 5%;
             justify-content: space-between;
-           
         }
-        &__link{
-            margin-left:0;
-         }
-        &__link:not(:last-child){
-           margin-right:40px;
+        &__link {
+            margin-left: 0;
         }
-        
-       
-}
-.restaurants__list{
-    flex-wrap:wrap;
-    justify-content: space-between;
-}
-
-
+        &__link:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+    .restaurants__list {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }

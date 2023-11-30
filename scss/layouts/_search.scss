@@ -1,8 +1,8 @@
 .search {
-    width:100%;
+    width: 100%;
     background-color: $background-color-grey;
     height: 50px;
-    margin-top:4px;
+    margin-top: 4px;
 }
 .search__group {
     display: flex;
@@ -10,21 +10,21 @@
     justify-content: center;
     align-items: center;
     &__icon {
-        width:12px;
-        height:16px;
+        width: 12px;
+        height: 16px;
     }
     &__input {
         border: none;
         font-family: $font-global;
-        font-size:16px;
-        font-weight:500;
-        color:$secondary-color;
-        height:50px;
-        background-color:transparent;
+        font-size: 16px;
+        font-weight: 500;
+        color: $secondary-color;
+        height: 50px;
+        background-color: transparent;
         text-align: center;
-        outline:none;
+        outline: none;
     }
     &__input:active {
-      text-decoration:underline;
+        text-decoration: underline;
     }
 }
