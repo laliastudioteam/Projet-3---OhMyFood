@@ -238,12 +238,22 @@ a.menu-link {
 a.menu-link:hover .menu-card {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
+a.menu-link:hover .menu-card__content {
+  width: 100%;
+  max-width: 100%;
+}
 a.menu-link:hover .menu-card__content__price {
   transform: translateX(-60px);
+  width: 20%;
+  max-width: 20%;
 }
 a.menu-link:hover .menu-card__content__price__check__img {
   animation: fadeIn 1s 0.2s;
   animation-fill-mode: forwards;
+}
+a.menu-link:hover .menu-card__content__txt {
+  width: 80%;
+  max-width: 80%;
 }
 
 a.menu-link .menu-card {
@@ -253,25 +263,36 @@ a.menu-link .menu-card {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 15px;
   background-color: #fff;
-}
-a.menu-link .menu-card__content {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  display: flex;
-  align-items: center;
   overflow: hidden;
 }
+a.menu-link .menu-card__content {
+  width: 120%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  box-sizing: border-box;
+}
 a.menu-link .menu-card__content__txt {
+  display: flex;
+  flex-direction: column;
   margin-left: 20px;
   margin-top: 13px;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 a.menu-link .menu-card__content__txt__title {
   margin: 0px;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 18px;
   font-family: "Roboto";
   color: #000000;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 80%;
+  max-width: 80%;
 }
 a.menu-link .menu-card__content__txt__subtitle {
   font-size: 13px;
@@ -280,14 +301,21 @@ a.menu-link .menu-card__content__txt__subtitle {
   font-size: 17px;
   font-family: "Roboto";
   color: #000000;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 80%;
+  max-width: 80%;
 }
 a.menu-link .menu-card__content__price {
+  width: 20%;
   font-size: 15px;
   font-weight: 700;
   margin: -14px -60px 0px -13px;
   color: #353535;
   display: flex;
   align-items: center;
+  justify-content: end;
   transition: all 0.5s ease-in-out;
 }
 a.menu-link .menu-card__content__price__price {
