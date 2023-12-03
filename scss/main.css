@@ -128,6 +128,12 @@ a {
   height: 13px;
   margin: 0px 20px 0px 0px;
 }
+.footer__navbar__list__link:hover {
+  color: #99e2d0;
+}
+.footer__navbar__list__link:hover .footer__navbar__list__link__icon {
+  filter: brightness(0) saturate(100%) invert(97%) sepia(4%) saturate(4487%) hue-rotate(139deg) brightness(97%) contrast(80%);
+}
 
 /****** Media queries ***********/
 @media screen and (min-width: 768px) {
@@ -231,58 +237,56 @@ a {
 a.menu-link {
   width: 100%;
   padding: 0;
-  margin: 0;
+  margin-bottom: 20px;
   display: flex;
   box-sizing: border-box;
 }
 a.menu-link:hover .menu-card {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
-a.menu-link:hover .menu-card__content {
-  width: 100%;
-  max-width: 100%;
+a.menu-link:hover .menu-card__content__check {
+  margin: 0;
 }
-a.menu-link:hover .menu-card__content__price {
-  transform: translateX(-60px);
-  width: 20%;
-  max-width: 20%;
-}
-a.menu-link:hover .menu-card__content__price__check__img {
-  animation: fadeIn 1s 0.2s;
-  animation-fill-mode: forwards;
-}
-a.menu-link:hover .menu-card__content__txt {
-  width: 80%;
-  max-width: 80%;
+
+a.menu-link:has(input[type=checkbox]:checked) .menu-card__content__check {
+  margin: 0;
 }
 
 a.menu-link .menu-card {
-  margin-bottom: 20px;
   height: 69px;
   width: 100%;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 15px;
   background-color: #fff;
   overflow: hidden;
+  box-sizing: border-box;
 }
 a.menu-link .menu-card__content {
-  width: 120%;
+  margin: 0;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   overflow: hidden;
-  box-sizing: border-box;
 }
 a.menu-link .menu-card__content__txt {
   display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-  margin-top: 13px;
+  flex-direction: row;
+  min-width: 0;
   width: 100%;
-  overflow: hidden;
   box-sizing: border-box;
+  justify-content: space-between;
+  align-items: end;
 }
-a.menu-link .menu-card__content__txt__title {
+a.menu-link .menu-card__content__txt__left {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding-left: 15px;
+  justify-content: center;
+  overflow: hidden;
+}
+a.menu-link .menu-card__content__txt__left__title {
+  width: 100%;
   margin: 0px;
   font-weight: 500;
   font-size: 18px;
@@ -291,12 +295,11 @@ a.menu-link .menu-card__content__txt__title {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  width: 80%;
-  max-width: 80%;
 }
-a.menu-link .menu-card__content__txt__subtitle {
+a.menu-link .menu-card__content__txt__left__subtitle {
+  width: 100%;
+  margin: 0;
   font-size: 13px;
-  margin: 0px 0px 30px 0px;
   font-weight: 300;
   font-size: 17px;
   font-family: "Roboto";
@@ -304,40 +307,40 @@ a.menu-link .menu-card__content__txt__subtitle {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  width: 80%;
-  max-width: 80%;
 }
-a.menu-link .menu-card__content__price {
-  width: 20%;
+a.menu-link .menu-card__content__txt__right {
   font-size: 15px;
   font-weight: 700;
-  margin: -14px -60px 0px -13px;
   color: #353535;
   display: flex;
-  align-items: center;
+  align-items: last baseline;
   justify-content: end;
-  transition: all 0.5s ease-in-out;
+  padding-right: 10px;
 }
-a.menu-link .menu-card__content__price__price {
-  margin-right: 10px;
-  margin-top: 15px;
-}
-a.menu-link .menu-card__content__price__check {
+a.menu-link .menu-card__content__check {
   background-color: #99e2d0;
   border-radius: 0 15px 15px 0;
+  margin: 0px -60px 0 0;
+  padding: 0;
   width: 60px;
   height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.5s ease-in-out;
+  box-sizing: border-box;
 }
-a.menu-link .menu-card__content__price__check__img {
+a.menu-link .menu-card__content__check__img {
   width: 20px;
   height: 20px;
   height: auto;
-  opacity: 0;
 }
 
+@media screen and (min-width: 768px) {
+  a.menu-link:not(:has(input[type=checkbox]:checked)) .menu-card__content__check:hover {
+    margin: 0;
+  }
+}
 /****** restaurant_card ***********/
 a.restaurant-link {
   width: 100%;
@@ -455,6 +458,49 @@ a.restaurant-link .restaurant-card__content__favorite__img__container:hover {
 
 .big_button:hover {
   opacity: 0.5;
+}
+
+.checkbox-wrapper .round-checkbox {
+  position: relative;
+}
+
+.checkbox-wrapper .round-checkbox label {
+  background-color: #fff;
+  border: 1px solid #99e2d0;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 21px;
+  width: 21px;
+  display: block;
+}
+
+.checkbox-wrapper .round-checkbox label:after {
+  border: 2px solid #99e2d0;
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 4px;
+  left: 7px;
+  opacity: 0;
+  position: absolute;
+  top: 8px;
+  transform: rotate(-45deg);
+  width: 8px;
+}
+
+.checkbox-wrapper .round-checkbox input[type=checkbox] {
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+}
+
+.checkbox-wrapper .round-checkbox input[type=checkbox]:checked + label {
+  background-color: #fff;
+  border-color: #99e2d0;
+}
+
+.checkbox-wrapper .round-checkbox input[type=checkbox]:checked + label:after {
+  opacity: 1;
 }
 
 .loader {
@@ -685,7 +731,7 @@ a.restaurant-link .restaurant-card__content__favorite__img__container:hover {
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin: 20px;
+  margin: 20px 0 20px 0;
 }
 
 /* Hero's */
@@ -714,7 +760,7 @@ a.restaurant-link .restaurant-card__content__favorite__img__container:hover {
     padding-right: 10%;
   }
   .menu__title {
-    justify-content: start;
+    justify-content: center;
   }
   .menu__title__favorite {
     margin-left: 20px;

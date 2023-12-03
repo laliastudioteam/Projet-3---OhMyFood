@@ -24,8 +24,7 @@
         font-weight: 500;
         margin-left: 5%;
         margin-bottom: 20px;
-       
-   
+
         &__step {
             display: flex;
             align-items: center;
@@ -51,19 +50,14 @@
         background-color: $background-color-grey;
         box-shadow: 0px 4px 15px (rgba(#000000, 30%));
         font-weight: 700;
-     
     }
     &__link:hover .functioning__link__step {
-        transform: translateX(20%) scale(110%) ;
+        transform: translateX(20%) scale(110%);
         box-shadow: 0px 4px 15px (rgba(#000000, 10%));
-     
-
-      }
-      &__link:hover .functioning__link__icon {
-        transform: scale(110%) ;
-
-
-      }
+    }
+    &__link:hover .functioning__link__icon {
+        transform: scale(110%);
+    }
 }
 
 /****** restaurants ***********/
