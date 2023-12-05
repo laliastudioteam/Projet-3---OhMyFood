@@ -15,13 +15,20 @@
             height: 44px;
             width: 162px;
         }
-        &__back {
-            width: 10%;
+    }
+    &__back {
+        width: 10%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        &__icon {
             margin-left: 15px;
+            font-size: 22px;
+            color: $background-color-dark;
         }
-        &__forwardk {
-            width: 10%;
-            margin-right: 15px;
-        }
+    }
+    &__forward {
+        width: 10%;
+        margin-right: 15px;
     }
 }

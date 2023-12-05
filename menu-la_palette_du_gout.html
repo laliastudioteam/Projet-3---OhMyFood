@@ -5,11 +5,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Oh My Food - Menu - La palette du goût</title>
 		<link href="scss/main.css" rel="stylesheet" />
+		<script
+			src="https://kit.fontawesome.com/8aa73fb75e.js"
+			crossorigin="anonymous"
+		></script>
 	</head>
 	<body>
 		<header class="header">
 			<div class="header__back">
-				<a href="./"><img src="assets/icones/back.svg" alt="Retour" /></a>
+				<a href="./" title="Retour">
+					<i class="fa-solid fa-arrow-left header__back__icon"></i>
+				</a>
 			</div>
 			<div class="header__logo">
 				<img
@@ -24,7 +30,7 @@
 			<div class="hero hero_la_palette_du_gout"></div>
 			<section class="menu">
 				<!-- Formulaire de selection-->
-				<form method="POST" action="">
+				<form method="POST" action="#">
 					<div class="menu__title">
 						<h1>La palette du goût</h1>
 						<div class="menu__title__favorite">
@@ -41,10 +47,10 @@
 						<div class="separation-plat">
 							<h2 class="separation-plat__title">
 								Entrées
-								<div class="separation-plat__title__underline"></div>
+								<span class="separation-plat__title__underline"></span>
 							</h2>
 						</div>
-						<a class="menu-link">
+						<div class="menu-link">
 							<article class="menu-card">
 								<div class="menu-card__content">
 									<div class="menu-card__content__txt">
@@ -68,8 +74,8 @@
 									</div>
 								</div>
 							</article>
-						</a>
-						<a class="menu-link">
+						</div>
+						<div class="menu-link">
 							<article class="menu-card">
 								<div class="menu-card__content">
 									<div class="menu-card__content__txt">
@@ -97,8 +103,8 @@
 									</div>
 								</div>
 							</article>
-						</a>
-						<a class="menu-link">
+						</div>
+						<div class="menu-link">
 							<article class="menu-card">
 								<div class="menu-card__content">
 									<div class="menu-card__content__txt">
@@ -124,16 +130,16 @@
 									</div>
 								</div>
 							</article>
-						</a>
+						</div>
 					</div>
 					<div class="group_menu group_plats">
 						<div class="separation-plat">
 							<h2 class="separation-plat__title">
 								Plats
-								<div class="separation-plat__title__underline"></div>
+								<span class="separation-plat__title__underline"></span>
 							</h2>
 						</div>
-						<a class="menu-link">
+						<div class="menu-link">
 							<article class="menu-card">
 								<div class="menu-card__content">
 									<div class="menu-card__content__txt">
@@ -159,8 +165,8 @@
 									</div>
 								</div>
 							</article>
-						</a>
-						<a class="menu-link">
+						</div>
+						<div class="menu-link">
 							<article class="menu-card">
 								<div class="menu-card__content">
 									<div class="menu-card__content__txt">
@@ -188,8 +194,8 @@
 									</div>
 								</div>
 							</article>
-						</a>
-						<a class="menu-link">
+						</div>
+						<div class="menu-link">
 							<article class="menu-card">
 								<div class="menu-card__content">
 									<div class="menu-card__content__txt">
@@ -213,16 +219,16 @@
 									</div>
 								</div>
 							</article>
-						</a>
+						</div>
 					</div>
 					<div class="group_menu group_desserts">
 						<div class="separation-plat">
 							<h2 class="separation-plat__title">
 								Desserts
-								<div class="separation-plat__title__underline"></div>
+								<span class="separation-plat__title__underline"></span>
 							</h2>
 						</div>
-						<a class="menu-link">
+						<div class="menu-link">
 							<article class="menu-card">
 								<div class="menu-card__content">
 									<div class="menu-card__content__txt">
@@ -246,8 +252,8 @@
 									</div>
 								</div>
 							</article>
-						</a>
-						<a class="menu-link">
+						</div>
+						<div class="menu-link">
 							<article class="menu-card">
 								<div class="menu-card__content">
 									<div class="menu-card__content__txt">
@@ -275,8 +281,8 @@
 									</div>
 								</div>
 							</article>
-						</a>
-						<a class="menu-link">
+						</div>
+						<div class="menu-link">
 							<article class="menu-card">
 								<div class="menu-card__content">
 									<div class="menu-card__content__txt">
@@ -302,7 +308,7 @@
 									</div>
 								</div>
 							</article>
-						</a>
+						</div>
 					</div>
 					<div class="command">
 						<a class="big_button" href="#anchor-restaurants">Commander</a>
@@ -321,22 +327,16 @@
 			<nav class="footer__navbar">
 				<ul class="footer__navbar__list">
 					<li class="footer__navbar__list__option">
-						<a href="#" class="footer__navbar__list__link"
-							><img
-								src="assets/icones/cutfork.svg"
-								alt="Couteau Fourchette"
-								class="footer__navbar__list__link__icon"
-							/>Proposer un restaurant</a
-						>
+						<a href="#" class="footer__navbar__list__link">
+							<i class="fa-solid fa-utensils footer__navbar__list__link__icon"></i>
+							Proposer un restaurant
+						</a>
 					</li>
 					<li class="footer__navbar__list__option">
-						<a href="#" class="footer__navbar__list__link"
-							><img
-								src="assets/icones/handshake.svg"
-								alt="Poignée de main"
-								class="footer__navbar__list__link__icon"
-							/>Devenir partenaire</a
-						>
+						<a href="#" class="footer__navbar__list__link">
+							<i class="fa-solid fa-handshake footer__navbar__list__link__icon"></i>
+							Devenir partenaire
+						</a>
 					</li>
 					<li class="footer__navbar__list__option">
 						<a href="#" class="footer__navbar__list__link">Mentions légales</a>

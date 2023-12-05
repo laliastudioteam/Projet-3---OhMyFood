@@ -1,6 +1,6 @@
 /****** menu_card ***********/
 
-a.menu-link {
+.menu-link {
 	width: 100%;
 	padding: 0;
 	margin-bottom: 20px;
@@ -13,11 +13,11 @@ a.menu-link {
 		margin: 0;
 	}
 }
-a.menu-link:has(input[type="checkbox"]:checked) .menu-card__content__check {
+.menu-link:has(input[type="checkbox"]:checked) .menu-card__content__check {
 	margin: 0;
 }
 
-a.menu-link .menu-card {
+.menu-link .menu-card {
 	height: 69px;
 	width: 100%;
 	box-shadow: 0px 4px 15px (rgba(#000000, 15%));
@@ -80,8 +80,7 @@ a.menu-link .menu-card {
 				align-items: last baseline;
 				justify-content: end;
 				padding-right: 10px;
-				&__price {
-				}
+				
 			}
 		}
 
@@ -107,7 +106,7 @@ a.menu-link .menu-card {
 }
 
 @media screen and (min-width: 768px) {
-	a.menu-link:not(:has(input[type="checkbox"]:checked)) .menu-card__content__check:hover {
+	.menu-link:not(:has(input[type="checkbox"]:checked)) .menu-card__content__check:hover {
 		margin: 0;
 	}
 }

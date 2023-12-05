@@ -5,6 +5,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Oh My Food</title>
 		<link href="scss/main.css" rel="stylesheet" />
+		<script
+			src="https://kit.fontawesome.com/8aa73fb75e.js"
+			crossorigin="anonymous"
+		></script>
 	</head>
 	<body>
 		<div class="loader">
@@ -33,9 +37,9 @@
 			<section class="intro-search">
 				<div class="search">
 					<div class="search__group">
-						<label for="search_input"
-							><img class="search__group__icon" src="./assets/icones/pin.svg" alt="location"
-						/></label>
+						<label for="search_input">
+							<i class="fa-solid fa-location-dot" class="search__group__icon"></i>
+						</label>
 						<input
 							class="search__group__input"
 							type="text"
@@ -58,30 +62,19 @@
 					<h2 class="functioning__section-title">Fonctionnement</h2>
 				</div>
 				<div class="functioning__list">
-					<a href="#" class="functioning__link"
-						><span class="functioning__link__step">1</span
-						><img
-							class="functioning__link__icon"
-							src="assets/icones/mobile-screen-button.svg"
-							alt="mobile_screen"
-						/>Choisissez un restaurant</a
-					>
-					<a href="#" class="functioning__link"
-						><span class="functioning__link__step">2</span
-						><img
-							class="functioning__link__icon"
-							src="assets/icones/list-ul.svg"
-							alt="mobile_screen"
-						/>Composez votre menu</a
-					>
-					<a href="#" class="functioning__link"
-						><span class="functioning__link__step">3</span
-						><img
-							class="functioning__link__icon"
-							src="assets/icones/store.svg"
-							alt="mobile_screen"
-						/>Dégustez au restaurant</a
-					>
+					<a href="#" class="functioning__link">
+						<span class="functioning__link__step">1</span>
+						<i class="fa-solid fa-mobile-screen functioning__link__icon"></i>
+						Choisissez un restaurant
+					</a>
+					<a href="#" class="functioning__link">
+						<span class="functioning__link__step">2</span>
+						<i class="fa-solid fa-list functioning__link__icon"></i>Composez votre menu
+					</a>
+					<a href="#" class="functioning__link">
+						<span class="functioning__link__step">3</span>
+						<i class="fa-solid fa-store functioning__link__icon"></i>Dégustez au restaurant
+					</a>
 				</div>
 			</section>
 			<!-- Restaurants -->
@@ -104,15 +97,9 @@
 									<p class="restaurant-card__content__txt__subtitle">Ménilmontant</p>
 								</div>
 								<div class="restaurant-card__content__favorite">
-									<div
-										class="restaurant-card__content__favorite__img__container"
-									/>
-                                    <img
-                                    src="assets/icones/heart-regular.svg"
-                                    alt="Favori"
-                                    class="restaurant-card__content__favorite__img"
-                                />   
-                                </div>
+									<div class="restaurant-card__content__favorite__img__container">
+										<i class="fa-regular fa-heart restaurant-card__content__favorite__img" ></i>
+									</div>
 								</div>
 							</div>
 						</article>
@@ -131,15 +118,14 @@
 									<p class="restaurant-card__content__txt__subtitle">Charonne</p>
 								</div>
 								<div class="restaurant-card__content__favorite">
-									<div
-										class="restaurant-card__content__favorite__img__container"
-									/>
-                                    <img
-                                    src="assets/icones/heart-regular.svg"
-                                    alt="Favori"
-                                    class="restaurant-card__content__favorite__img"
-                                />   
-                                </div>
+									<div class="restaurant-card__content__favorite__img__container">
+										<img
+											src="assets/icones/heart-regular.svg"
+											alt="Favori"
+											class="restaurant-card__content__favorite__img"
+										/>
+									</div>
+								</div>
 							</div>
 						</article>
 					</a>
@@ -157,15 +143,14 @@
 									<p class="restaurant-card__content__txt__subtitle">Cité Rouge</p>
 								</div>
 								<div class="restaurant-card__content__favorite">
-									<div
-										class="restaurant-card__content__favorite__img__container"
-									/>
-                                    <img
-                                    src="assets/icones/heart-regular.svg"
-                                    alt="Favori"
-                                    class="restaurant-card__content__favorite__img"
-                                />   
-                                </div>
+									<div class="restaurant-card__content__favorite__img__container">
+										<img
+											src="assets/icones/heart-regular.svg"
+											alt="Favori"
+											class="restaurant-card__content__favorite__img"
+										/>
+									</div>
+								</div>
 							</div>
 						</article>
 					</a>
@@ -182,15 +167,14 @@
 									<p class="restaurant-card__content__txt__subtitle">Folie-Méricourt</p>
 								</div>
 								<div class="restaurant-card__content__favorite">
-									<div
-										class="restaurant-card__content__favorite__img__container"
-									/>
-                                    <img
-                                    src="assets/icones/heart-regular.svg"
-                                    alt="Favori"
-                                    class="restaurant-card__content__favorite__img"
-                                />   
-                                </div>
+									<div class="restaurant-card__content__favorite__img__container">
+										<img
+											src="assets/icones/heart-regular.svg"
+											alt="Favori"
+											class="restaurant-card__content__favorite__img"
+										/>
+									</div>
+								</div>
 							</div>
 						</article>
 					</a>
@@ -209,22 +193,16 @@
 			<nav class="footer__navbar">
 				<ul class="footer__navbar__list">
 					<li class="footer__navbar__list__option">
-						<a href="#" class="footer__navbar__list__link"
-							><img
-								src="assets/icones/cutfork.svg"
-								alt="Couteau Fourchette"
-								class="footer__navbar__list__link__icon"
-							/>Proposer un restaurant</a
-						>
+						<a href="#" class="footer__navbar__list__link">
+							<i class="fa-solid fa-utensils footer__navbar__list__link__icon"></i>
+							Proposer un restaurant
+						</a>
 					</li>
 					<li class="footer__navbar__list__option">
-						<a href="#" class="footer__navbar__list__link"
-							><img
-								src="assets/icones/handshake.svg"
-								alt="Poignée de main"
-								class="footer__navbar__list__link__icon"
-							/>Devenir partenaire</a
-						>
+						<a href="#" class="footer__navbar__list__link">
+							<i class="fa-solid fa-handshake footer__navbar__list__link__icon"></i>
+							Devenir partenaire
+						</a>
 					</li>
 					<li class="footer__navbar__list__option">
 						<a href="#" class="footer__navbar__list__link">Mentions légales</a>

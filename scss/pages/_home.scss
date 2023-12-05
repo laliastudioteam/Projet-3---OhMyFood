@@ -44,6 +44,7 @@
         &__icon {
             margin-right: 20px;
             margin-left: 25px;
+            color: $fifth-color;
         }
     }
     &__link:hover {
@@ -57,6 +58,7 @@
     }
     &__link:hover .functioning__link__icon {
         transform: scale(110%);
+        color:$third-color;
     }
 }
 

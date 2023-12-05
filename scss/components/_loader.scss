@@ -1,5 +1,5 @@
 .loader {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: $background-color;
@@ -40,6 +40,7 @@
             font-size: 14px;
             margin-top: 5px;
             color: $background-color-dark;
+            animation: bounceOver 2s ease-in-out 0s infinite;
         }
     }
 }
