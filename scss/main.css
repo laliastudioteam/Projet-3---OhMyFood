@@ -423,11 +423,12 @@ a.restaurant-link .restaurant-card__content__txt__subtitle {
 }
 a.restaurant-link .restaurant-card__content__favorite {
   margin-right: 20px;
-  z-index: 9999;
+  z-index: 9998;
 }
 a.restaurant-link .restaurant-card__content__favorite__img {
   font-size: 22px;
   transition: all 2s ease-in-out;
+  color: #000000;
 }
 a.restaurant-link .restaurant-card__content__favorite__img:hover {
   opacity: 0;
