@@ -6,14 +6,22 @@
 	margin-bottom: 20px;
 	display: flex;
 	box-sizing: border-box;
-	&:hover:active .menu-card {
+	&:hover .menu-card {
 		box-shadow: 0px 4px 15px (rgba(#000000, 20%));
 	}
-	&:hover:active .menu-card__content__check {
+	&:hover .menu-card__content__check {
+		margin: 0;
+	}
+	&:active .menu-card {
+		box-shadow: 0px 4px 15px (rgba(#000000, 20%));
+	}
+	&:active .menu-card__content__check {
 		margin: 0;
 	}
 }
-
+.menu-link:has(input[type="checkbox"]:checked) .menu-card__content__check {
+	margin: 0;
+}
 
 .menu-link .menu-card {
 	height: 69px;
