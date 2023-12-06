@@ -12,13 +12,18 @@
 }
 @keyframes fadeInOut {
   0% {
+    -webkit-opacity: 1;
     opacity: 1;
   }
   72% {
+    -webkit-opacity: 1;
     opacity: 1;
   }
   100% {
+    -webkit-opacity: 0;
     opacity: 0;
+    /* Hack Safari */
+    visibility: hidden;
     display: none;
   }
 }
@@ -517,7 +522,7 @@ a.restaurant-link .restaurant-card__content__favorite__img__container:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: fadeInOut 4s ease-in-out 0s 1;
+  animation: fadeInOut 4s ease-in-out;
   animation-fill-mode: forwards;
 }
 .loader__container {
