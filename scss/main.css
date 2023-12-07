@@ -263,10 +263,9 @@ a {
   margin: 0;
 }
 
-.menu-link:has(input[type=checkbox]:checked) .menu-card__content__check {
-  margin: 0;
-}
-
+/*.menu-link:has(input[type="checkbox"]:checked) .menu-card__content__check {
+	margin: 0;
+}*/
 .menu-link .menu-card {
   height: 69px;
   width: 100%;
