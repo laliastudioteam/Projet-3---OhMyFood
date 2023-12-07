@@ -12,7 +12,7 @@ a.restaurant-link {
 		box-shadow: 0px 4px 15px (rgba(#000000, 20%));
 	}
 }
-a.restaurant-link .restaurant-card {
+ .restaurant-card {
 	margin-bottom: 40px;
 	height: auto;
 	width: 100%;
@@ -63,11 +63,12 @@ a.restaurant-link .restaurant-card {
 		}
 		&__favorite {
 			margin-right: 20px;
-			z-index: 9998;
+		
 			&__img {
 				font-size:22px;
 				transition: all 2s ease-in-out;
 				color:$font-primary-color;
+
 				&:hover {
 					opacity: 0;
 				}

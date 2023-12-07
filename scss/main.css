@@ -370,21 +370,21 @@ a.restaurant-link:hover .restaurant-card {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-a.restaurant-link .restaurant-card {
+.restaurant-card {
   margin-bottom: 40px;
   height: auto;
   width: 100%;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 15px;
 }
-a.restaurant-link .restaurant-card__cover {
+.restaurant-card__cover {
   width: 100%;
   height: 124px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   object-fit: cover;
 }
-a.restaurant-link .restaurant-card__new {
+.restaurant-card__new {
   font-family: "Roboto";
   font-size: 16px;
   font-weight: 500;
@@ -397,23 +397,23 @@ a.restaurant-link .restaurant-card__new {
   color: #008766;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
 }
-a.restaurant-link .restaurant-card__content {
+.restaurant-card__content {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-a.restaurant-link .restaurant-card__content__txt {
+.restaurant-card__content__txt {
   margin-left: 20px;
 }
-a.restaurant-link .restaurant-card__content__txt__title {
+.restaurant-card__content__txt__title {
   margin: 20px 0px 5px 0px;
   font-weight: 700;
   font-size: 18px;
   font-family: "Roboto";
   color: #000000;
 }
-a.restaurant-link .restaurant-card__content__txt__subtitle {
+.restaurant-card__content__txt__subtitle {
   font-size: 13px;
   margin: 0px 0px 20px 0px;
   font-weight: 300;
@@ -421,19 +421,18 @@ a.restaurant-link .restaurant-card__content__txt__subtitle {
   font-family: "Roboto";
   color: #000000;
 }
-a.restaurant-link .restaurant-card__content__favorite {
+.restaurant-card__content__favorite {
   margin-right: 20px;
-  z-index: 9998;
 }
-a.restaurant-link .restaurant-card__content__favorite__img {
+.restaurant-card__content__favorite__img {
   font-size: 22px;
   transition: all 2s ease-in-out;
   color: #000000;
 }
-a.restaurant-link .restaurant-card__content__favorite__img:hover {
+.restaurant-card__content__favorite__img:hover {
   opacity: 0;
 }
-a.restaurant-link .restaurant-card__content__favorite__img__container {
+.restaurant-card__content__favorite__img__container {
   -webkit-mask-image: url("../assets/icones/heart-solid.svg");
   mask-image: url("../assets/icones/heart-solid.svg");
   transition: all 1s ease-in-out;
@@ -442,7 +441,7 @@ a.restaurant-link .restaurant-card__content__favorite__img__container {
   height: 22px;
   background-size: 100% 300%;
 }
-a.restaurant-link .restaurant-card__content__favorite__img__container:hover {
+.restaurant-card__content__favorite__img__container:hover {
   background-position: 100% 100%;
 }
 
